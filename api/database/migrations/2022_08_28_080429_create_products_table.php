@@ -20,7 +20,7 @@ class CreateProductsTable extends Migration
             $table->string('price');
             $table->string('image');
             $table->timestamps();
-            $table->bigInteger('category_id')->unsigned();
+            $table->unsignedBigInteger('category_id')->unsigned();
             $table->foreign('category_id')->references('id')->on('categories');
         });
     }
@@ -33,5 +33,7 @@ class CreateProductsTable extends Migration
     public function down()
     {
         Schema::dropIfExists('products');
+        // soft delete
+
     }
 }
