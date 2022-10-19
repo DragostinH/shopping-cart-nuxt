@@ -6,5 +6,3 @@ definePageMeta({
   middleware: ["auth"],
 });
 </script>
-
-<style></style>
