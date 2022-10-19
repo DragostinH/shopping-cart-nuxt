@@ -41,7 +41,6 @@ Route::post('/products', function (Request $request) {
 Route::put('/products/{product}', function (Request $request, $product) {
     $product = Product::findOrFail($product);
     $product->update($request->all());
-
     return $product;
 });
 
