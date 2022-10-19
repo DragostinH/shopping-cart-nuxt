@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-[rgba(0,0,0,0.2)] items-center absolute right-0 top-0 py-4">
+  <nav class="bg-[rgba(0,0,0,0.2)] items-center absolute rounded-md right-0 top-0 py-4">
     <ul class="flex gap-2 bg-[black] p-2 scre">
       <li>
         <nuxt-link to="/"><NavButton>Home</NavButton></nuxt-link>

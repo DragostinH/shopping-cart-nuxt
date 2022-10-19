@@ -12,6 +12,4 @@ definePageMeta({
   layout: "order",
 });
 
-const { data: products } = await useFetch("http://localhost:8000/api/products");
-
 </script>
